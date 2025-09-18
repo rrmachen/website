@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service — Spring Global</title>
+  <meta name="theme-color" content="#1da75a" />
+  <meta name="description" content="Terms of Service for Spring Global" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root {
+     --brand: #066f35;         /* Spring green */
+      --brand-600: #086b13;
+      --ink: #16302b;
+      --muted-ink: #4a6b60;
+      --bg: #ffffff;
+      --bg-soft: #f6fbf8;
+      --border: #e3efe8;
+      --focus: #0ea5e9;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji','Segoe UI Emoji'; color: var(--ink); background: var(--bg); line-height: 1.6; }
+    a { color: var(--brand-600); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1100px, 92%); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.85); backdrop-filter: saturate(140%) blur(8px); border-bottom: 1px solid var(--border); }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: .8rem 0; }
+    .logo { display: inline-flex; align-items: center; gap: .55rem; }
+    .logo-mark { width: 28px; height: 28px; background: var(--brand); border-radius: 8px; display: inline-block; }
+    .brand { font-weight: 700; letter-spacing: .2px; }
+    .nav-links { display: flex; gap: 1rem; align-items: center; }
+    .nav-links a { padding: .5rem .6rem; border-radius: .6rem; color: var(--muted-ink); font-weight: 500; }
+    .nav-links a:hover { background: var(--bg-soft); color: var(--ink); text-decoration: none; }
+    main { padding: 2rem 0; }
+    h1 { font-size: clamp(1.6rem, 2.2vw + 1rem, 2.4rem); line-height: 1.15; margin: 1rem 0; }
+    h2 { margin-top: 2rem; }
+    .muted { color: var(--muted-ink); }
+    .card { border: 1px solid var(--border); border-radius: 1rem; padding: 1.2rem; background: #fff; }
+    footer { border-top: 1px solid var(--border); background: #fcfdfc; padding: 2rem 0; color: var(--muted-ink); margin-top: 2rem; }
+    .small { font-size: .95rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <a class="logo" href="index.html" aria-label="Spring Global home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="brand">Spring Global</span>
+      </a>
+      <nav class="nav-links" aria-label="Top">
+        <a href="index.html#home">Home</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="opt-out.html">Opt-Out</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+
+<h1>Terms of Service</h1>
+<p class="muted">Last updated: September 12, 2025</p>
+<div class="card">
+  <h2>1. Overview</h2>
+  <ul>
+    Spring Global provides technology to support diabetes self‑management. Our services are informational and do not replace <br> professional medical advice, diagnosis, or treatment. Always consult a qualified clinician with questions about a medical condition.
+    </ul>
+    <h2>2. Eligibility & Acceptable Use</h2>
+  <ul>
+    You agree to use the Services in compliance with applicable laws and clinic/partner agreements. You will not misuse the Services, <br> attempt to access data you do not own, or interfere with others’ use.
+  </ul>
+  <h2>3. Accounts & Communications</h2>
+  <ul>
+    You are responsible for maintaining the confidentiality of your account where applicable. By using messaging channels <br> (e.g., SMS/WhatsApp), you consent to receiving service messages; you may opt out at any time.
+  </ul>
+  <h2>4. Disclaimers & Limitation of Liability</h2>
+  <ul>
+    To the fullest extent permitted by law, Spring Global disclaims warranties of merchantability, fitness, and non‑infringement. <br> Spring Global is not liable for indirect or consequential damages.
+  </ul>
+    <h2>5. Changes</h2>
+    <ul>We may update these Terms. Material changes will be posted here with a new “Last updated” date.</ul>
+  <h2>6. Contact</h2>
+  <ul>Questions about these Terms? See our <a href="index.html#contact">Contact</a> section.</ul>
+</div>
+
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="logo" style="margin-bottom:.5rem;">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="brand">Spring Global</span>
+      </div>
+      <div class="small">© <span id="year"></span> Spring Global. All rights reserved.</div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
